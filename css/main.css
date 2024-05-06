@@ -1,0 +1,542 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 93%;
+    margin: auto;
+}
+
+/*********navbar***********/
+nav{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+}
+nav .container{
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+}
+ul li{
+    padding: 10px 25px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s ;
+}
+nav a:hover {
+    color: rgb(199, 32, 146);
+}
+nav h1{
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(199, 32, 146);
+}
+nav h1 u{
+    color: rgb(108, 20, 208);
+}
+nav i{
+    padding: 5px;
+    transition: color 0.5s ;
+}
+nav i:hover {
+    color: rgb(199, 32, 146);
+    cursor: pointer;
+}
+/* ***************Home************** */
+.home{
+    overflow: auto;
+    margin-top: 50px;
+    height: 100vh;
+    background-image: url("../images/bg1.png");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.home img{
+    width: 35%;
+}
+.home .description{
+    width: 45%;
+}
+.home h1{
+    background-image: linear-gradient(#c72092, #6c14d0);
+    background-clip: var(-webkit-background-clip);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: "pyxidium quick";
+    line-height: 65px;
+}
+.pb-2{
+    padding-bottom: 40px ;
+}
+.home p{
+    font-size: 13px;
+    line-height: 20px;
+}
+.home button{
+    background-image: linear-gradient(to right,#c72092, #6c14d0);
+    padding: 6px 17px;
+    border-radius: 50px;
+    border-color: transparent;
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    cursor: pointer;
+}
+
+.home button:hover i{
+    animation: trans 0.7s infinite;
+}
+@keyframes trans{
+    0%{transform: translate(50%,0%);}
+    50%{transform: translate(0%,0%);}
+    100%{transform: translate(50%,0%);}
+}
+.home .home-icon{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    right: 20;
+    top: 40%;
+    transition: color 0.3s;
+}
+.home .home-icon i:hover{
+    color: #c72092;
+}
+
+
+/************Products***********/
+.products{
+    text-align: center;
+}
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 10px;
+}
+.products .prod{
+    width: 25%;
+    padding: 15px;
+}
+.prod .inner{
+    box-shadow: rgb(108, 20, 208) 0px 0px 8px 0px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.prod img{
+    width: 50%;
+    transition: transform 0.3s;
+}
+.products h2{
+    background-image: linear-gradient(to right, #c72092, #6c14d0);
+    background-clip: var(-webkit-background-clip);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 65px;
+    margin: 30px 0px;
+}
+.products h3{
+    font-size: 1.5rem;
+    margin: 5px 0px
+}
+.products h4{
+    font-size: 1.1rem;
+    margin: 5px 0px
+}
+
+.products p{
+    color: rgb(153, 153, 153);
+    font-size: 13px;
+    font-weight: 400;
+    margin: 10px 0px
+}
+.stars i{
+    color: rgb(255, 165, 0);
+    margin: 5px 0px;
+    font-size: 12px;
+}
+.products button{
+    background-image: linear-gradient(to right,#c72092, #6c14d0);
+    padding: 5px 15px;
+    border-color: transparent;
+    color: white;
+    margin-top: 10px;
+    font-size: medium;
+}
+.prod .icons{
+    position: absolute;
+    top: 30;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    transform: translate(-65px , 0px);
+    transition: transform 0.5s;
+}
+.prod .icons i{
+    border: 0.2px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    transition: color 0.3s;
+}
+.prod .inner:hover img{
+    transform: scale(1.2);
+}
+.prod .inner:hover .icons{
+    transform: translate(0px , 0px);
+}
+.prod .icons i:hover{
+    color: #c72092;
+}
+
+/*************About*********/
+.about{
+    text-align: center;
+    margin: 30px 0px;
+}
+.about h2{
+    background-image: linear-gradient(to right,#c72092, #6c14d0);
+    background-clip: var(-webkit-background-clip);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 65px;
+    margin-bottom: 30px;
+}
+.about-content{
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    column-gap: 70px;
+    position: relative;
+}
+.about .description{
+    text-align: left;
+    width: 400px;
+    box-shadow: rgb(199, 32, 146) 0px 0px 8px 0px;
+    border: 1px solid #c72092;
+    color: rgb(108, 20, 208);
+    border-radius: 10px;
+    font-size: 13px;
+    line-height: 22px;
+    padding: 10px;
+}
+.red-shoes img{
+    width: 100%;
+    background-image: linear-gradient(to right,#c72092, #6c14d0);
+    opacity: 0.6;
+    border-radius: 10px;
+    transition: opacity 0.3s;
+}
+.red-shoes img:hover{
+    opacity: 1;
+}
+.red-shoes{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: -30%;
+}
+.the-red-shoes{
+    width: 400px;
+    box-shadow: rgb(108, 20, 208) 0px 0px 8px 0px;
+    border: 1px solid #6c14d0;
+    border-radius: 10px;
+    position: relative;
+}
+
+.the-red-shoes img.big{
+    width: 100%;
+    padding: 20px;
+}
+.about button{
+    text-align: center;
+    box-shadow: rgb(199, 32, 146) 0px 0px 8px 0px;
+    padding: 10px 30px;
+    background-color: white;
+    border-color: rgba(199, 32, 146,0.5);
+    margin: 20px;
+    transition: color 0.3s, background-color 0.3s;
+}
+.about button:hover{
+    background-color: #c72092;
+    color: white;
+}
+/***********Review*********/
+.cust-review{
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;   
+}
+.review h2{
+    text-align: center;
+    background-image: linear-gradient(to right, #c72092, #6c14d0);
+    background-clip: var(-webkit-background-clip);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 65px;
+    margin-bottom: 30px;
+}
+.card{
+    width: 33.33%;
+    padding: 10px;
+}
+.card .inner{
+    background-color: rgb(238, 238, 238);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 6px 0px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.card .person{
+    display: flex;
+    column-gap: 10px;
+}
+.card p{
+    font-size: 13px;
+    margin-top: 5px;
+    line-height: 20px;
+}
+.card .person img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+.card .person img:hover{
+    transform: scale(1.2);
+}
+/************Services*********/
+.services{
+    text-align: center;
+    margin: 30px 0px;
+}
+.services h2{
+    background-image: linear-gradient(to right, #c72092, #6c14d0);
+    background-clip: var(-webkit-background-clip);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 65px;
+    margin-bottom: 30px;
+}
+.services-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.services-items .item i{
+    font-size: 60px;
+    color: rgb(255, 165, 0);
+    margin-bottom: 10px;
+}
+.services-items .item p{
+    color: rgb(153, 153, 153);
+    margin-top: 10px;
+}
+/************Welcome Back!*******/
+.log-in{
+    height: 100vh;
+    margin: 50px 0px;
+    background-image: url(../images/loging_bg.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.log-in .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.log-in img{
+    width: 40%;
+}
+.log-in .loging{
+    width: 25%;
+}
+.loging h2{
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "pyxidium quick";
+    margin-bottom: 40px;
+}
+.loging .input-content{
+    border: 2px solid #6c14d0;
+    padding: 5px;
+    border-radius: 5px;
+}
+.input-content input{
+    background-color: transparent;
+    border-color: transparent;
+}
+.input-content i{
+    color: #c72092;
+}
+.loging p{
+    padding: 5px 0px;
+    font-size: 13px;
+}
+p.right{
+    text-align: right;
+}
+.loging button{
+    width: 100%;
+    background-image: linear-gradient(to right,#c72092, #6c14d0);
+    color: white;
+    padding: 7px 0px;
+    margin: 5px 0px;
+    border-radius: 5px;
+    font-size: small;
+    border-color: transparent;
+}
+.social-img{
+    text-align: center;
+    margin: 10px 0px;
+}
+.social-img img{
+    width: 35px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+/*********footer**********/
+footer{
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+    padding: 10px 0px;
+}
+footer .container{
+    display: flex;
+}
+footer .container > *{
+    width: 20%;
+}
+footer .container a{
+   text-decoration: none;
+   color: black;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: auto;
+}
+.contact-links a{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    font-size: 13px;
+}
+.contact-links i{
+    transition: color 0.3s;
+}
+.contact-links i:hover{
+    color: #c72092;
+}
+.box a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+.Follow-US{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+.Follow-US i{
+    font-size: 10px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;
+    transition: color 0.3s , background-image 0.3s;   
+}
+.Follow-US i:hover{
+    color: white;
+    background-image: linear-gradient(to right,#c72092, #6c14d0);
+}
+.Newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Newsletter form{
+    width: 70%;
+}
+.Newsletter .input-content{
+    background-color: rgb(184, 183, 183);
+    padding: 5px;
+    border-radius: 50px;
+}
+.Newsletter .input-content input{
+    background-color: rgb(184, 183, 183);
+    border-color: transparent;
+    width: 100%;
+}
+.Newsletter button{
+    width: 100%;
+    background-image: linear-gradient(to right,#c72092, #6c14d0);
+    color: white;
+    padding: 5px 0px;
+    margin: 10px 0px;
+    border-radius: 50px;
+    font-size: small;
+    border-color: transparent;
+}
+footer h4{
+    color: rgb(28, 0, 128);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px 0px;
+}

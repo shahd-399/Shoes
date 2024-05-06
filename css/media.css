@@ -1,0 +1,149 @@
+
+
+@media (max-width: 1200px) { 
+    /************Products***********/
+    .products .prod{
+        width: 33.33%;
+    }
+    /***********Review*********/
+    .card{
+        width: 50%;
+    }
+ }
+
+
+
+@media  (max-width: 1024px) 
+{
+    /*************About*********/
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+        position: relative;
+    }
+    .about .description,.the-red-shoes{
+        width: 50%;
+    }
+}
+
+
+
+@media  (max-width: 930px) 
+{
+     /************Products***********/
+    .products .prod{
+        width: 50%;
+    }
+
+}
+
+
+
+@media  (max-width: 828px) 
+{
+    /********home********/
+    .home{
+        background-color: white;
+        background-size: 0%;
+    }
+    .home img{
+        display: none;
+    }
+    .home .container{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        position: relative;
+    }
+    .home .description{
+        width: 65%;
+    }
+    /***********Review*********/
+    .cust-review{
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+    .card{
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+
+@media  (max-width: 768px) 
+{
+    /*********navbar***********/
+    .links{
+        display: none;
+    }
+
+    /************Welcome Back!*******/
+    .log-in .container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    .log-in img{
+        width: 60%;
+    }
+    .log-in .loging{
+        width: 50%;
+    }
+    .social-img img{
+        width: 35px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 50%;
+    }
+    /************Services*********/
+    .services-items{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    /*********footer**********/
+    footer .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .container > *{
+        width: 100%;
+    }
+    .Newsletter form{
+        width: 30%;
+    }
+}
+
+
+
+
+
+@media  (max-width: 598px) {
+    /********home********/
+    .home .description{
+        width: 100%;
+    }
+    .home h1{
+        font-size: 60px;
+    }
+    /************Products***********/
+    .products-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+    .products .prod{
+        width: 100%;
+    }
+    .products h2{
+        font-size: 45px;
+    }
+
+}
