@@ -91,18 +91,21 @@ nav i:hover {
     font-family: "pyxidium quick";
     line-height: 65px;
 }
-.pb-2{
+h1.Collection{
     padding-bottom: 40px ;
+    font-family:  sans-serif;
+    font-size: 65px;
 }
 .home p{
     font-size: 13px;
     line-height: 20px;
+    max-width: 400px;
 }
 .home button{
     background-image: linear-gradient(to right,#c72092, #6c14d0);
     padding: 6px 17px;
     border-radius: 50px;
-    border-color: transparent;
+    border: none;
     color: white;
     position: absolute;
     bottom: 10%;
@@ -136,15 +139,15 @@ nav i:hover {
 .products{
     text-align: center;
 }
-.products-container{
+.products .container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     row-gap: 10px;
 }
 .products .prod{
-    width: 25%;
+    width: 300;
     padding: 15px;
 }
 .prod .inner{
@@ -237,14 +240,16 @@ nav i:hover {
 }
 .about-content{
     display: flex;
-    justify-content: end;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     column-gap: 70px;
     position: relative;
+    row-gap: 60px;
 }
 .about .description{
+    max-width: 500px;
     text-align: left;
-    width: 400px;
     box-shadow: rgb(199, 32, 146) 0px 0px 8px 0px;
     border: 1px solid #c72092;
     color: rgb(108, 20, 208);
@@ -254,7 +259,7 @@ nav i:hover {
     padding: 10px;
 }
 .red-shoes img{
-    width: 100%;
+    width:100%;
     background-image: linear-gradient(to right,#c72092, #6c14d0);
     opacity: 0.6;
     border-radius: 10px;
@@ -281,8 +286,7 @@ nav i:hover {
 }
 
 .the-red-shoes img.big{
-    width: 100%;
-    padding: 20px;
+    height: 250px;
 }
 .about button{
     text-align: center;
@@ -374,8 +378,7 @@ nav i:hover {
 }
 /************Welcome Back!*******/
 .log-in{
-    height: 100vh;
-    margin: 50px 0px;
+    padding: 100px 0px;
     background-image: url(../images/loging_bg.png);
     background-position: center;
     background-size: cover;
@@ -389,7 +392,7 @@ nav i:hover {
     align-items: center;
 }
 .log-in img{
-    width: 40%;
+    width: 550px;;
 }
 .log-in .loging{
     width: 25%;
@@ -427,7 +430,7 @@ p.right{
     margin: 5px 0px;
     border-radius: 5px;
     font-size: small;
-    border-color: transparent;
+    border: none;
 }
 .social-img{
     text-align: center;
@@ -452,8 +455,8 @@ footer .container > *{
     width: 20%;
 }
 footer .container a{
-   text-decoration: none;
-   color: black;
+    text-decoration: none;
+    color: black;
 }
 .contact{
     display: flex;
@@ -471,6 +474,7 @@ footer .container a{
     column-gap: 10px;
     align-items: center;
     font-size: 13px;
+    margin-bottom: 10px;
 }
 .contact-links i{
     transition: color 0.3s;
@@ -483,6 +487,7 @@ footer .container a{
     justify-content: center;
     align-items: center;
     font-size: 13px;
+    margin-bottom: 10px;
 }
 .Follow-US{
     display: flex;
@@ -532,7 +537,7 @@ footer .container a{
     margin: 10px 0px;
     border-radius: 50px;
     font-size: small;
-    border-color: transparent;
+    border: none;
 }
 footer h4{
     color: rgb(28, 0, 128);

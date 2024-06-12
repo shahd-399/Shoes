@@ -1,45 +1,22 @@
 
 
 @media (max-width: 1200px) { 
-    /************Products***********/
-    .products .prod{
-        width: 33.33%;
-    }
     /***********Review*********/
     .card{
         width: 50%;
     }
- }
+}
 
 
 
 @media  (max-width: 1024px) 
 {
     /*************About*********/
-    .about-content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: 30px;
-        position: relative;
-    }
-    .about .description,.the-red-shoes{
-        width: 50%;
+    .the-red-shoes img{
+        max-width: 300px;
+        max-height: 300px;
     }
 }
-
-
-
-@media  (max-width: 930px) 
-{
-     /************Products***********/
-    .products .prod{
-        width: 50%;
-    }
-
-}
-
 
 
 @media  (max-width: 828px) 
@@ -54,12 +31,16 @@
     }
     .home .container{
         display: flex;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
         position: relative;
     }
     .home .description{
         width: 65%;
+    }
+    .home button{
+        left: 50%;
+        transform: translatex(-50%);
     }
     /***********Review*********/
     .cust-review{
@@ -89,10 +70,10 @@
         row-gap: 40px;
     }
     .log-in img{
-        width: 60%;
+        width: 370px;
     }
     .log-in .loging{
-        width: 50%;
+        width: 300px;
     }
     .social-img img{
         width: 35px;
@@ -118,6 +99,11 @@
     .Newsletter form{
         width: 30%;
     }
+    /*************About*********/
+    .the-red-shoes img{
+        max-width: 300px;
+        max-height: 300px;
+    }
 }
 
 
@@ -126,21 +112,15 @@
 
 @media  (max-width: 598px) {
     /********home********/
-    .home .description{
-        width: 100%;
-    }
     .home h1{
-        font-size: 60px;
+        font-size: 50px;
     }
     /************Products***********/
-    .products-container{
+    .products .container{
         display: flex;
         flex-direction: column;
         align-items: center;
         row-gap: 10px;
-    }
-    .products .prod{
-        width: 100%;
     }
     .products h2{
         font-size: 45px;
